@@ -17,6 +17,7 @@ console.log(descr, photo);
 let saveBtn = document.querySelector("#saveBtn");
 
 //adding event listener and iterating input values
+render();
 
 saveBtn.addEventListener("click", async function () {
   if (!descr.value.trim() || !photo.value.trim()) {
@@ -27,8 +28,8 @@ saveBtn.addEventListener("click", async function () {
       descr: descr.value,
       photo: photo.value,
     };
-    console.log(postData);
-    fetch(API, {
+    // console.log(postData);
+    await fetch(API, {
       method: "POST",
       headers: {
         "Content-Type": "application/json; charset=utf-8",
@@ -36,4 +37,43 @@ saveBtn.addEventListener("click", async function () {
       body: JSON.stringify(postData),
     });
   }
+  descr.value = "";
+  photo.value = "";
+  container.innerHTML = "";
+
+  render();
 });
+//  getting container
+let container = document.querySelector(".container");
+
+//creating function get data from JsonServer
+
+// async function get() {
+//   let hey = await fetch(API);
+//   let res = await hey.json();
+//   console.log(res);
+//   render(res.photo);
+// }
+// get();
+// //creating function render
+async function render() {
+  let hey = await fetch(API);
+  let res = await hey.json();
+  console.log(res);
+  res.forEach((element) => {
+    container.innerHTML += `
+       <div class="cardPhoto">
+        <img
+          src="${element.photo}"
+          class="imgPhoto"
+        />
+      </div>`;
+  });
+}
+
+async function deleteCard() {
+  await fetch(`${API}/${id}`, {
+    method: "DELETE",
+  });
+  render();
+}
