@@ -1,4 +1,4 @@
-let API = " http://localhost:8000";
+let API = " http://localhost:8000/post";
 let addPostBtn = document.querySelector(".addPost");
 
 // Here I added attributes of modal window so after clicking the button
