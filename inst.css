@@ -63,8 +63,21 @@ body {
 }
 .cardPhoto {
   margin: 10px;
-  width: 30%;
 }
 .imgPhoto {
-  width: 280px;
+  max-width: 500px;
+  max-height: 500px;
 }
+
+/* modal of post  start*/
+.containerModal {
+  width: 900px;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.imgPhotoModal {
+  width: 450px;
+}
+
+/* modal of post  end*/
