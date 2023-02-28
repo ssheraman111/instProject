@@ -144,7 +144,7 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+    <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="staticBackdropLabel">HEy</h1>
@@ -155,23 +155,15 @@
               aria-label="Close"
             ></button>
           </div>
-          <!-- Big post body -->
           <div class="modal-body">
-            <div class="containerModal">
-              <div class="cardPhotoModal">
-                <img
-                  src="https://i.pinimg.com/236x/a6/de/33/a6de33d51f8bcab476a3c8f40bc89bc3.jpg"
-                  alt="..."
-                  class="imgPhotoModal"
-                />
-              </div>
-              <div class="rightInfo">
-                <button class="deleteBtn">delete</button>
-                <button class="editBtn">edit</button>
-              </div>
-            </div>
+            <input class="inp" id="photo" placeholder="link" type="text" />
+            <input
+              class="inp"
+              id="descr"
+              placeholder="description"
+              type="text"
+            />
           </div>
-          <!-- Big post body end -->
           <div class="modal-footer">
             <button
               type="button"
@@ -183,59 +175,18 @@
             <button type="button" id="saveBtn" class="btn btn-primary">
               Save
             </button>
+            <button type="button" id="deleteBtn" class="btn btn-primary">
+                Delete
+              </button>
           </div>
         </div>
       </div>
-    </div>
+        
+       
     <!-- Modal window for big card finished -->
-   <div class="containerModal">
-      <div class="cardPhotoModal">
-        <img
-          src="https://i.pinimg.com/236x/a6/de/33/a6de33d51f8bcab476a3c8f40bc89bc3.jpg"
-          alt=".."
-          class="imgPhotoModal"
-        />
-        <div class="commentAdd">
-          <div class="icons-row">
-            <img
-              src="./images/Name=Like, State=default, Dark=yes.png"
-              alt="..."
-            />
-            <img
-              src="./images/Name=Comment, State=default, Dark=yes.png"
-              alt="..."
-            />
-            <img
-              src="./images/Name=Share, State=default, Dark=yes.png"
-              alt="..."
-            />
-          </div>
-        </div>
-      </div>
-      <div class="rightInfo">
-        <div class="userModal">
-          <img
-            src="https://i.pinimg.com/236x/8e/6a/6e/8e6a6e48004fd048d5801742f22eaf08.jpg"
-            alt=""
-            class="user-img-modal"
-          />
-          <p class="user-name-modal">username</p>
-        </div>
-        <p class="descr">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          dolorum laudantium necessitatibus deleniti molestias beatae ex soluta
-          laboriosam minus. Excepturi hic aspernatur enim numquam qui ducimus a
-          doloremque libero, culpa sequi blanditiis magnam minus debitis eaque
-          fugiat. Laboriosam, obcaecati laudantium.
-        </p>
 
-        <button class="deleteBtn">delete</button>
-        <button class="editBtn">edit</button>
-      </div>
-    </div>
     <!-- modal of Post(onclick) end -->
-
-
+    <div class="Hey"></div>
     <script src="./inst.js"></script>
   </body>
 </html>
