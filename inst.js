@@ -1,4 +1,4 @@
-let API = " http://localhost:8000";
+let API = " http://localhost:8000/post";
 let addPostBtn = document.querySelector(".addPost");
 
 // Here I added attributes of modal window so after clicking the button
@@ -11,9 +11,29 @@ addPostBtn.setAttribute("data-bs-target", "#haroo");
 let descr = document.querySelector("#descr");
 let photo = document.querySelector("#photo");
 let inp = document.querySelectorAll(".inp");
+console.log(descr, photo);
+//getting save button
+
 let saveBtn = document.querySelector("#saveBtn");
-saveBtn.addEventListener("click", () => {
-  inp.forEach((item) => {
-    console.log(item.value);
-  });
+
+//adding event listener and iterating input values
+
+saveBtn.addEventListener("click", async function () {
+  if (!descr.value.trim() || !photo.value.trim()) {
+    alert("hey");
+    return;
+  } else {
+    let postData = {
+      descr: descr.value,
+      photo: photo.value,
+    };
+    console.log(postData);
+    fetch(API, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+      },
+      body: JSON.stringify(postData),
+    });
+  }
 });
