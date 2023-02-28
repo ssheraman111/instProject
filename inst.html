@@ -126,30 +126,67 @@
 
     <!-- card  -->
 
-    <div class="container">
-    
-    </div>
+    <div class="container"></div>
 
     <!-- card end -->
 
- 
-
     <!-- modal of Post(onclick) start -->
-    <div class="containerModal">
-      <div class="cardPhotoModal">
-        <img
-          src="https://i.pinimg.com/236x/a6/de/33/a6de33d51f8bcab476a3c8f40bc89bc3.jpg"
-          alt=".."
-          class="imgPhotoModal"
-        />
-      </div>
-      <div class="rightInfo">
-        <button class="deleteBtn">delete</button>
-        <button class="editBtn">edit</button>
+
+    <!-- modal of Post(onclick) end -->
+    <!-- Modal Window for Big card -->
+    <div
+      class="modal fade"
+      id="bigPostModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">HEy</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Big post body -->
+          <div class="modal-body">
+            <div class="containerModal">
+              <div class="cardPhotoModal">
+                <img
+                  src="https://i.pinimg.com/236x/a6/de/33/a6de33d51f8bcab476a3c8f40bc89bc3.jpg"
+                  alt="..."
+                  class="imgPhotoModal"
+                />
+              </div>
+              <div class="rightInfo">
+                <button class="deleteBtn">delete</button>
+                <button class="editBtn">edit</button>
+              </div>
+            </div>
+          </div>
+          <!-- Big post body end -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" id="saveBtn" class="btn btn-primary">
+              Save
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- modal of Post(onclick) end -->
-
+    <!-- Modal window for big card finished -->
 
     <script src="./inst.js"></script>
   </body>
