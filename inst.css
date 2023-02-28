@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: white;
+}
+.user-img {
+  border-radius: 50%;
+  padding: 10px;
+  width: 150px;
+}
+.user-name {
+  font-size: 20px;
+  margin-left: 45%;
+  position: relative;
+  top: 50px;
+}
+.header {
+  display: flex;
+  margin-left: 26%;
+}
+.addPost {
+  width: 150px;
+  height: 20px;
+}
