@@ -72,11 +72,94 @@
           />
           <p>story3</p>
         </div>
+
+        <div class="story4">
+          <img
+            src="https://i.pinimg.com/236x/09/5b/0c/095b0c340c35641f80a705fc6eb7ad2e.jpg"
+            alt="..."
+            class="story-img"
+          />
+          <p>story4</p>
+        </div>
       </div>
     </div>
 
     <!-- stories start -->
     <img class="line" src="./images/Line 31.png" alt="" />
+
+    <!--Pagination -->
+    <div class="PaginationTab">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination d-flex justify-content-center w-50">
+          <li class="page-item prev">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <!-- <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+          <div class="pagination-list d-flex"></div>
+
+          <li class="page-item next">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--Pagination -->
+
+    <!-- search start -->
+    <div class="searchTab">
+      <form class="d-flex w-25 search m-lg-5" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          id="search"
+        />
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+    <!-- search end -->
+
+    <!--Pagination -->
+    <div class="PaginationTab">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination d-flex justify-content-center w-50">
+          <li class="page-item prev">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <!-- <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+          <div class="pagination-list d-flex"></div>
+
+          <li class="page-item next">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--Pagination -->
+
+    <!-- search start -->
+    <div class="searchTab">
+      <form class="d-flex w-25 search m-lg-5" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          id="search"
+        />
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+    <!-- search end -->
 
     <!-- modal window  -->
     <div
@@ -127,7 +210,11 @@
 
     <!-- card  -->
 
-    <div class="container"></div>
+    <div
+      id="post-list"
+      id="post-list"
+      class="d-flex flex-wrap justify-content-center d-flex flex-wrap justify-content-center container"
+    ></div>
 
     <!-- card end -->
 
@@ -144,7 +231,7 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-    <div class="modal-dialog">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="staticBackdropLabel">HEy</h1>
@@ -155,15 +242,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <input class="inp" id="photo" placeholder="link" type="text" />
-            <input
-              class="inp"
-              id="descr"
-              placeholder="description"
-              type="text"
-            />
-          </div>
+
           <div class="modal-footer">
             <button
               type="button"
@@ -176,17 +255,13 @@
               Save
             </button>
             <button type="button" id="deleteBtn" class="btn btn-primary">
-                Delete
-              </button>
+              Delete
+            </button>
           </div>
         </div>
       </div>
-        
-       
-    <!-- Modal window for big card finished -->
+    </div>
 
-    <!-- modal of Post(onclick) end -->
-    <div class="Hey"></div>
     <script src="./inst.js"></script>
   </body>
 </html>
